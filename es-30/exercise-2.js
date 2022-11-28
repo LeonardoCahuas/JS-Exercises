@@ -6,7 +6,7 @@ class Person {
     this.age = age;
   }
   static fromJson(json){
-    return JSON.parse(json);
+    return Object.assign(new Person, JSON.parse(json));
   }
   toJson() {
     return JSON.stringify(this);
