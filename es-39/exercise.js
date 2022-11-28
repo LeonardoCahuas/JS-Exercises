@@ -26,4 +26,6 @@ promise
    .then(verifyNumber)
    .then((obj) => console.log(obj)) 
    .catch((err) => console.error(err))
+   .finally(()=> console.log("verification completed"))
+
 
