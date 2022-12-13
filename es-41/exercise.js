@@ -6,8 +6,6 @@ const user = {
 
 localStorage.setItem('user', JSON.stringify(user));
 
-loadStorage();
-
 let data = JSON.parse(localstorage.getItem("user"));
 
 console.log(data);
