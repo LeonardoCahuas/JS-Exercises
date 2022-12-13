@@ -21,8 +21,9 @@
 
 <script>
   // code here
-  let inputs = document.getElementsByClassName("form-input");
+  let inputs = document.querySelectorAll(".form-input");
+  let labels = document.querySelectorAll("label");
   for(let i=0; i<inputs.length; i++){
-    console.log(`${inputs[i].previousElementSibling.innerHTML} ${inputs[i].value}` );
+    console.log(`${labels[i].innerHTML} ${inputs[i].value}` );
   }
 </script>
